@@ -1,8 +1,23 @@
+import HomeHeader from "@/components/HomeHeader";
+import HomeSearch from "@/components/HomeSearch";
+import Image from 'next/image';
+import googleLogo from "../../public/google-logo.png"
 
 export default function Home() {
   return (
     <>
-    <h1 className="bg-red-700 text-white">Hello Google</h1>
+      <HomeHeader />
+      <div className="flex flex-col items-center mt-24">
+        <Image
+        src={googleLogo}
+          alt="Google Logo"
+          width={200}
+          height={100}
+          priority
+          style={{ width: "auto" }}
+        />
+        <HomeSearch/>
+      </div>
     </>
   );
 }
