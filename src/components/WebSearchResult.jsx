@@ -1,6 +1,7 @@
 import React from "react";
 import Parser from 'html-react-parser';
 import Link from 'next/link';
+import PaginationButtons from "./PaginationButtons";
 
 const WebSearchResult = ({results}) => {
   return (
@@ -23,6 +24,9 @@ const WebSearchResult = ({results}) => {
           <p className='text-gray-600 '>{Parser(result.htmlSnippet)}</p>
         </div>
       ))}
+      <div className=" flex justify-center items-center mr-16">
+        <PaginationButtons/>
+      </div>
     </div>
   );
 };
