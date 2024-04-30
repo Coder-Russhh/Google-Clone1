@@ -1,7 +1,9 @@
 import HomeHeader from "@/components/HomeHeader";
 import HomeSearch from "@/components/HomeSearch";
 import Image from 'next/image';
-import googleLogo from "../../public/google-logo.png"
+import googleLogo from "../../public/google-logo.png";
+import "./globals.css";
+
 
 export default function Home() {
   return (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PaginationButtons from "./PaginationButtons";
+// import Image from 'next/image';
 
 const ImageSearchResult = ({ results }) => {
   return (
