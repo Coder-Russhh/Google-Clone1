@@ -1,5 +1,6 @@
 "use client";
 
+import React, { Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { AiOutlineCamera, AiOutlineSearch } from "react-icons/ai";
 
@@ -39,4 +40,14 @@ const SearchHeaderOptions = () => {
   );
 };
 
-export default SearchHeaderOptions;
+// export default SearchHeaderOptions;
+
+const SuspendedSearchHeaderOptions = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SearchHeaderOptions />
+    </Suspense>
+  );
+};
+
+export default SuspendedSearchHeaderOptions;
