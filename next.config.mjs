@@ -9,6 +9,10 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    reactRoot: true,
+    missingSuspenseWithCSRBailout: false,
+  },
 };
 
 export default nextConfig;
